@@ -1,0 +1,134 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000000 L
+  2 _A_button_pressed                                              0002F9 GR
+    _LCDC_REG                                                      ****** GX
+  0 ___str_0                                                       000CCB R
+  0 ___str_1                                                       000D72 R
+  7 __xinit__A_button_pressed                                      0002F9 R
+  7 __xinit__anim_cnt                                              0002FC R
+  7 __xinit__bug_d                                                 00033D R
+  7 __xinit__bug_dx                                                000339 R
+  7 __xinit__bug_rando_cnt                                         0002FA R
+  7 __xinit__bug_respawn_location_cnt                              000330 R
+  7 __xinit__bug_status                                            000341 R
+  7 __xinit__bug_tiles                                             000000 R
+  7 __xinit__bug_x                                                 000331 R
+  7 __xinit__bug_y                                                 000335 R
+  7 __xinit__button_pressed                                        0002F8 R
+  7 __xinit__fire_cnt                                              00030C R
+  7 __xinit__fire_x                                                000306 R
+  7 __xinit__fire_y                                                000309 R
+  7 __xinit__fuel_icon_x                                           000317 R
+  7 __xinit__fuel_icon_y                                           00031A R
+  7 __xinit__fuel_x                                                00030F R
+  7 __xinit__fuel_y                                                000313 R
+  7 __xinit__game_map                                              000190 R
+  7 __xinit__game_over                                             0002FE R
+  7 __xinit__gem_rando_cnt                                         0002FB R
+  7 __xinit__gem_x                                                 00032D R
+  7 __xinit__gem_x_list                                            00031D R
+  7 __xinit__gem_y                                                 00032E R
+  7 __xinit__gem_y_list                                            000325 R
+  7 __xinit__gems_collected                                        00032F R
+  7 __xinit__player_d                                              000303 R
+  7 __xinit__player_dx                                             000301 R
+  7 __xinit__player_dy                                             000302 R
+  7 __xinit__player_fuel                                           000304 R
+  7 __xinit__player_max_fuel                                       000305 R
+  7 __xinit__player_x                                              0002FF R
+  7 __xinit__player_y                                              000300 R
+  7 __xinit__ready_to_start                                        0002FD R
+  2 _anim_cnt                                                      0002FC GR
+  0 _bugKilled                                                     000911 GR
+  2 _bug_d                                                         00033D GR
+  2 _bug_dx                                                        000339 GR
+  2 _bug_rando_cnt                                                 0002FA GR
+  2 _bug_respawn_location_cnt                                      000330 GR
+  2 _bug_status                                                    000341 GR
+  2 _bug_tiles                                                     000000 GR
+  2 _bug_x                                                         000331 GR
+  0 _bug_x_respawn                                                 000022 GR
+  2 _bug_y                                                         000335 GR
+  0 _bug_y_respawn                                                 000026 GR
+  2 _button_pressed                                                0002F8 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  1 _centered                                                      000001 GR
+  0 _centeredOnTile                                                00002A GR
+    _display_off                                                   ****** GX
+  2 _fire_cnt                                                      00030C GR
+  0 _fire_max_cnt                                                  00001A GR
+  2 _fire_x                                                        000306 GR
+  2 _fire_y                                                        000309 GR
+  0 _floor                                                         000018 GR
+  2 _fuel_icon_x                                                   000317 GR
+  0 _fuel_icon_x_respawn                                           00001F GR
+  2 _fuel_icon_y                                                   00031A GR
+  2 _fuel_x                                                        00030F GR
+  0 _fuel_x_respawn                                                00001B GR
+  2 _fuel_y                                                        000313 GR
+  2 _game_map                                                      000190 GR
+  2 _game_over                                                     0002FE GR
+  2 _gem_rando_cnt                                                 0002FB GR
+  2 _gem_x                                                         00032D GR
+  2 _gem_x_list                                                    00031D GR
+  2 _gem_y                                                         00032E GR
+  2 _gem_y_list                                                    000325 GR
+  2 _gems_collected                                                00032F GR
+  1 _joydata                                                       000000 GR
+    _joypad                                                        ****** GX
+  0 _main                                                          000B62 GR
+  0 _moveBugs                                                      00066D GR
+  0 _movePlayer                                                    0002CD GR
+  0 _obstruction                                                   000036 GR
+  0 _performantDelay                                               000000 GR
+  0 _playerGetsFuel                                                000596 GR
+  0 _playerOnBUG                                                   000B12 GR
+  0 _playerSetsFire                                                000458 GR
+  2 _player_d                                                      000303 GR
+  2 _player_dx                                                     000301 GR
+  2 _player_dy                                                     000302 GR
+  2 _player_fuel                                                   000304 GR
+  2 _player_max_fuel                                               000305 GR
+  2 _player_x                                                      0002FF GR
+  2 _player_y                                                      000300 GR
+    _printf                                                        ****** GX
+  0 _rando                                                         00000D GR
+  2 _ready_to_start                                                0002FD GR
+  0 _resetGame                                                     0001C6 GR
+  0 _respawnFuel                                                   000A6B GR
+    _set_bkg_data                                                  ****** GX
+    _set_bkg_tiles                                                 ****** GX
+    _set_sprite_data                                               ****** GX
+    _shadow_OAM                                                    ****** GX
+  0 _spriteOnSprite                                                0000EB GR
+  0 _updateFire                                                    00053D GR
+  0 _updateGem                                                     000AAF GR
+    _wait_vbl_done                                                 ****** GX
+  0 _wall                                                          000019 GR
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 3.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size    D7C   flags    0
+   1 _DATA                                      size      2   flags    0
+   2 _INITIALIZED                               size    345   flags    0
+   3 _DABS                                      size      0   flags    8
+   4 _HOME                                      size      0   flags    0
+   5 _GSINIT                                    size      0   flags    0
+   6 _GSFINAL                                   size      0   flags    0
+   7 _INITIALIZER                               size    345   flags    0
+   8 _CABS                                      size      0   flags    8
+
